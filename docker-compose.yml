@@ -4,4 +4,11 @@ services:
     build: db/
     container_name: "mongodb"
     ports:
-      - "27017:27017"
+    - 27017
+  api:
+    build: api/
+    container_name: "fastapi"
+    ports:
+    - "80:80"
+    depends_on:
+      - db
