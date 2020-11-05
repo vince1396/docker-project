@@ -1,0 +1,11 @@
+pandas
+numpy
+seaborn
+sklearn 
+jupyter
+joblib
+stop_words
+streamlit
+pydantic
+fastapi
+pymongo
