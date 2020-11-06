@@ -12,3 +12,10 @@ services:
     - "80:80"
     depends_on:
       - db
+  webapp:
+    build: webapp/
+    container_name: "streamlit"
+    ports:
+    - "1307:1307"
+    depends_on:
+      - api
